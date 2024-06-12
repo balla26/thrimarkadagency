@@ -1,0 +1,11 @@
+.service-card {
+    margin: 18px auto !important;
+    @apply lg:w-1/4 sm:w-5/12 my-auto mx-auto hover:shadow-lg hover:shadow-orange rounded-2xl transition-all duration-300;
+}
+/* .orange{
+    hover:shdaow-lg;
+    hover:shadow-orange;
+}
+orange:hover{
+
+} */

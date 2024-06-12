@@ -1,0 +1,89 @@
+.banner{
+    background-image: url("../assets/hero_bg.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /* min-height: 100%; */
+    background-attachment: fixed;
+    
+
+}
+.cs-style1{
+    height:calc(100vh+180px);
+    min-height: 100vh;
+    padding: 200px 0 250px;
+  
+    position: relative;
+
+
+
+}
+.cs-shape-1{
+    border-bottom: 9 px solid transparent;
+    border-left: 14px solid #ff4a17;
+    border-top: 9px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    animation: semi-rotate-anim 8s cubic-bezier(0.4,0,0.2,1) ;
+}
+@keyframes semi-rotate-anim{
+    50%{
+        transform: translateY(25px) rotate(-53deg);
+        animation-timing-function:cubic-bezier(.4,0,.2,1);
+
+    }
+}
+.cs-shape-1:first-child{
+    left:10%;
+    top:20%;
+}
+.cs-shape-1:nth-child(2){
+    left:72%;
+    top: 20%;
+    transform:rotate(-15deg)
+}
+.cs-shape-1:nth-child(3){
+    left: 35%;
+    top:68%;
+    transform:rotate(-30deg);
+}
+
+/* scroll btn */
+.cs-down_btn{
+border: 2px solid #fff;
+border-radius: 10px;
+height:35px;
+position: absolute;
+left:50%;
+margin-left: -10px;
+width:20px;
+cursor:pointer;
+
+}
+.cs-down_btn::before{
+    border-radius: 50%;
+    content: "";
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    width: 5px;
+    transform: translate(-50%,-50%);
+    animation:UpAndDown 3s infinite;
+
+}
+@keyframes UpAndDown{
+    0%{
+        top: 50%;
+
+    }
+    50%{
+        top: 70%;
+        opacity:  .5;
+        transform: translate(-50%,-50%) scale(0.8);
+    }
+}
+

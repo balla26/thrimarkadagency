@@ -1,0 +1,93 @@
+/* General styles */
+header, nav {
+    z-index: 100001;
+}
+
+.active {
+    color: #ff4a17 !important;
+}
+
+/* Logo styles with media queries for different devices */
+.logo {
+    width: 40px; /* Default size */
+    height: auto;
+}
+
+@media (min-width: 576px) {
+    .logo {
+        width: 80px; /* Small devices */
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 100px; /* Medium devices */
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 120px; /* Large devices */
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 140px; /* Extra large devices */
+    }
+}
+
+/* Navbar styles */
+nav {
+    background-color: transparent; /* Ensure the background is transparent */
+    transition: all 0.3s ease-in-out;
+}
+
+nav.sticky {
+    background-color: #000; /* Dark background color for sticky state */
+    transition: all 0.3s ease-in-out;
+}
+
+.navitems a {
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.navitems a:hover {
+    color: #ff4a17;
+}
+
+/* Mobile menu styles */
+.bg-dark {
+    background-color: #000; /* Dark background for mobile menu */
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #000; /* Dark background for mobile menu */
+        z-index: 100001;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-transform: uppercase;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .mobile-menu a:hover {
+        color: #ff4a17;
+    }
+}

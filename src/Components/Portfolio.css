@@ -1,0 +1,31 @@
+/* Hide the default scrollbar */
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* Hide Webkit scrollbar */
+  .hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Style for the custom scrollbar */
+  .hide-scroll-bar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .hide-scroll-bar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .hide-scroll-bar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+.card-bg-img{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgb(255, 81, 0) 100%);
+  opacity: 80px;
+  font-family: 'Poppins', sans-serif;
+}

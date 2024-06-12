@@ -1,0 +1,181 @@
+.modal-top {
+    margin-top: 120px;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+/* Modal > closeButton{
+    background-color: #8E0E00 !important;
+} */
+
+/* .modal-bg {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+} */
+
+/* .header-bg{
+
+} */
+
+.btn-grad {
+    background-image: linear-gradient(to right, #8E0E00 0%, #1F1C18 51%, #8E0E00 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+body.active-modal {
+    overflow-y: hidden;
+    z-index: 1111;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    color: black;
+    max-height: 70vh;
+    /* Set a maximum height for the modal content */
+    overflow-y: auto;
+    /* Add a vertical scroll bar when content overflows */
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+/* Add a higher z-index for the modal to ensure it appears above other elements */
+.modal {
+    z-index: 1111;
+    color: black;
+}
+
+/* Add a higher z-index for the body when the modal is active to prevent scrolling */
+body.active-modal {
+    overflow-y: hidden;
+    z-index: 1111;
+}
+
+/* Style the modal button */
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+/* Style the modal and overlay to cover the entire viewport */
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+/* Style the overlay background with transparency */
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    /* Adjust the blur intensity as needed */
+}
+
+
+/* Style the modal content */
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    color: black;
+}
+
+/* Style the close button for the modal */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+.img-bg {
+    cursor: pointer !important;
+    transition: box-shadow 0.3s;
+}
+
+.img-bg:hover {
+    box-shadow: 0 8px 12px rgb(255, 77, 0);
+}
+
+
+.bg-blck {
+    backdrop-filter: blur(80px) !important;
+    /* Adjust the blur intensity as needed */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Adjust the background color and opacity */
+}
+
+.bg-whte {
+    backdrop-filter: blur(80px) !important;
+    /* Adjust the blur intensity as needed */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Adjust the background color and opacity */
+}

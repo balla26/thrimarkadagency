@@ -1,0 +1,212 @@
+.image-container {
+    position: relative;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 50%, transparent 90%);
+  }
+  
+  .btn {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
+  }
+  
+  .custom-button {
+    /* background: linear-gradient(to right,red,yellow); */
+    /* background: linear-gradient(to right, red, yellow); */
+    background: none;
+    /* Other button styles */
+    color: white;
+    /* border: 2px solid orangered; */
+    /* padding: 10px 20px; */
+    opacity: 1;
+    background-size: auto !important;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: background-color 0.3s, border-radius 0.3s; /* Add transition effect */
+    /* border-radius: 40px; Adjust the border-radius value as needed */
+    /* border-radius: 20px; */
+    font-size: large;
+    /* font-size: medium; */
+  }
+  
+  .custom-button:hover {
+    /* background-color: rgba(128, 128, 128, 0.7); Gray color with opacity */
+    opacity: 0.8;
+    border: 4px solid linear-gradient(to right, red, yellow);
+    /* border: 4px solid orangered; */
+    color: #fff;
+    background: linear-gradient(rgb(0, 0, 0) , rgb(0, 0, 0))  padding-box , linear-gradient(120deg, red, yellow) border-box;
+  
+  
+    /* border-radius: 20px; */
+    /* color: black; */
+  }
+  
+  
+  /* Scroll Down button */
+  .scroll-down-button {
+    font-size: 15px;
+    position: absolute;
+    bottom: 60px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure it's above the carousel indicators */
+    background: transparent;
+    border: transparent;
+    /* border: 2px solid white;  */
+    color: white; /* White font color */
+    animation: moveUpDown 1.5s ease-in-out infinite; /* Add animation */
+    padding: 10px 20px; /* Adjust padding as needed */
+    /* border-radius: 50px; */
+  }
+  
+  /* Animation for the scroll-down button */
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(-5px); /* Adjust the vertical movement here */
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(5px); /* Adjust the vertical movement here */
+    }
+  }
+  .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5% !important;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 5%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+  }
+  
+  
+  
+  @media (max-width: 991px) {
+    .gradient-overlay {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.5) 100%,
+        transparent 100%
+      );
+    }
+  }
+  
+  /* CSS file (e.g., RCarousel.css) */
+  
+  /* .above-carousel-content {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 40%;
+    z-index: 2;
+  } */
+  .above-carousel-content {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 40%;
+    z-index: 2;
+  }
+  .rhead{
+    font-size: 150px;
+    color: #ea5d2f;
+    z-index: 2;
+  }
+  .rtext{
+    font-size: 55px;
+    color: #f0f0f0;
+    margin-top: -10px;
+    margin-left: 10px !important;
+  }
+  .custom-button{
+    font-size: medium;
+    margin-top: 26px;
+  
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .above-carousel-content {
+      position: absolute;
+      top: 150px;
+      left: 0;
+      width: 100%;
+      padding: 0 20px;
+      text-align: left;
+    }
+    .rhead{
+      font-size: 150px;
+    }
+    .rtext{
+      font-size: 70px;
+    }
+    .custom-button{
+      font-size: large;
+      margin-top: 22px;
+  
+    }
+    
+  }
+  @media (max-width: 425px) {
+    
+    .rhead{
+      font-size: 90px;
+    }
+    .rtext{
+      font-size: 30px;
+    }
+    .scroll-down-button{
+      font-size: 20px;
+    }
+    .custom-button{
+      margin-top: 18px;
+  
+    }
+  
+  }
+  .myelementSec{
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn{
+    from{
+      opacity: 0.4;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  .arrowDownSvg{
+    margin-bottom: 2px;
+  }
